@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>About Us</title>
+</head>
+<body>
+	<p><a href="index.html">Home</a> &nbsp; | <a href="">Aboutus</a> &nbsp; | <a href="contact.html">Contactus</a> &nbsp;</p>
+	welcome: <b><span id="displayname"></span></b>
+	your age: <b><span id="displayage"></span></b>
+	<h1>This is About us page</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+	<script type="text/javascript">
+		/*var x=10;
+		var y=20;
+		var z= x+y
+		alert("total"+z)*/
+		//alert("hi all i am in about page")
+		/*const params = new URLSearchParams(window.location.search);
+		const names=params.get('name');
+		const ages=params.get('age');
+		console.log(names,ages);
+		document.getElementById("displayname").innerHTML=names*/
+		
+		/*<a href="about.html?myname=AjitKumar&age=30" >
+		About
+		</a>
+var params = new URLSearchParams(window.location.search);
+		  var names = params.get('myname');
+		  var ages = params.get('age');
+		  console.log(names, ages);
+		  document.getElementById("displayname").innerHTML = names;
+		  document.getElementById("displayage").innerHTML = ages;*/
+		
+		
+		
+		/*const param1=document.cookie.replace(
+		/(?:(?:^|.*;\s*)names\s*\=\s*([^;]*.*$)|^.*$/,"$1");
+		document.getElementById("displayname").innerHTML = param1;
+		
+		const param2=document.cookie.replace(
+		/(?:(?:^|.*;\s*)age\s*\=\s*([^;]*.*$)|^.*$/,"$1");
+		document.getElementById("displayage").innerHTML = param2;*/
+		
+		const param2 = localStorage.getItem('param2');
+		document.getElementById("displayage").innerHTML = param2;
+	</script>
+</html>
